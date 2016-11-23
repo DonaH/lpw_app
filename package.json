@@ -23,6 +23,7 @@
   "homepage": "https://github.com/DonaH/lpw_app#readme",
   "dependencies": {
     "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
     "dotenv": "^2.0.0",
