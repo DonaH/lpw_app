@@ -7,7 +7,7 @@ var MENSAJE = process.env.MENSAJE
 
 var PORT = process.env.PORT || 3000
 // var DB_URL = 'mongodb://localhost/test'
-var DB_URL = 'mongodb://localhost/lpw_app'
+var DB_URL = 'mongodb://localhost/pwp_app'
 
 // console.log(MENSAJE)
 
