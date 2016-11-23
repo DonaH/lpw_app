@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DonaH/lpw_app.git"
+    "url": "git+https://github.com/DonaH/pwp_app.git"
   },
   "keywords": [
     "pwp",
@@ -18,9 +18,9 @@
   "author": "DH",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DonaH/lpw_app/issues"
+    "url": "https://github.com/DonaH/pwp_app/issues"
   },
-  "homepage": "https://github.com/DonaH/lpw_app#readme",
+  "homepage": "https://github.com/DonaH/pwp_app#readme",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.2",
