@@ -6,6 +6,6 @@ var genreSchema = new mongoose.Schema({
   genre: String,
  })
 
- var Genre = mongoose.model('Genre', genreSchema)
+ var Genre = mongoose.model('genre', genreSchema)
 
  module.exports = Genre

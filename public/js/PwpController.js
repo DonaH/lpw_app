@@ -1,14 +1,14 @@
 angular.module('PwpApp')
   .controller('PwpController', PwpController)
 
-SongsController.$inject = ['$http', '$log'];
+PwpController.$inject = ['$http', '$log'];
 
 function PwpController($http, $log){
   var vm = this;
   vm.all = []
   vm.newGenre = {}
   vm.addGenre = addGenre;
-  vm.displayGenre = displayGenre;
+  // vm.displayGenre = displayGenre;
 
   // Get all the genres
   function getGenres(){
@@ -16,9 +16,9 @@ function PwpController($http, $log){
       method: 'GET',
       url: 'http://localhost:3000/genres'
     })
-    .then(function(response){
-      console.log(response.data);
-      vm.all = response.data;
+    .then(function(res){
+      console.log(res.data);
+      vm.all = res.data;
     })
   }
     getGenres();
