@@ -3,7 +3,7 @@ var Schema = mongoose.Schema
 
 // Setup Genre Schema
 var genreSchema = new mongoose.Schema({
-  genre: String,
+  name: String,
  })
 
  var Genre = mongoose.model('genre', genreSchema)
