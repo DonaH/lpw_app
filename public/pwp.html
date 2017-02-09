@@ -54,7 +54,8 @@
                             <div class="input-field">
                                 <input id="search" type="text" ng-model="pc.addGenre.genre" placeholder="type in the genre...">
                                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                <i class="material-icons">close</i>  <!-- verifiy action to close / clear -->
+                                <i class="material-icons">close</i>
+                                <!-- verifiy action to close / clear -->
                             </div>
 
                             <!-- <div class="row">
@@ -80,27 +81,31 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                          <div class="col s12 m4 l3">
-                            <span class="badge">{{pc.all.length}}</span> Number of genres
-                              <ul class="collection">
-                                <li class="collection-item" ng-repeat="genre in pc.all">
-                                  <!-- <input type="text" ng-model="genre.genre" /><a ng-click="pc.showGenre">{{genre.genre}}</a> -->
-                                  <input ng-show="pc.editable" ng-model="genre.name" /><a ng-hide="pc.editable" ng-click="pc.showGenre(genre)">{{genre.name}}</a> &nbsp;-&nbsp;
-                                    <a href="#" ng-hide="pc.editable" ng-click="pc.editable = true">edit</a>
-                                    <a href="#" ng-show="pc.editable" ng-click="pc.editable = false; pc.updateGenre(genre)">Save</a> |&nbsp;
-                                    <a href="#" ng-click="pc.removeGenre(genre)">x</a>
-                                </li>
-                              </ul>
-                          </div>
+                        <span class="badge">{{pc.all.length}}</span> Number of genres
+
+                        <div class="section">
+
+                            <div class="collection">
+
+                                <div class="collection-item" ng-repeat="genre in pc.all">
+                                    <!-- <input type="text" ng-model="genre.genre" /><a ng-click="pc.showGenre">{{genre.genre}}</a> -->
+
+                                    <input ng-show="pc.editable" ng-model="genre.name" /><a ng-hide="pc.editable" ng-click="pc.showGenre(genre)">{{genre.name}}</a> &nbsp;-&nbsp;
+                                    <a href="#!" ng-hide="pc.editable" ng-click="pc.editable = true">edit</a>
+                                    <a href="#!" ng-show="pc.editable" ng-click="pc.editable = false; pc.updateGenre(genre)">Save</a> |&nbsp;
+                                    <a href="#!" ng-click="pc.removeGenre(genre)">x</a>
+                                </div>
+
+                            </div>
+
                         </div>
-                        
+
                         <div class="col s12 m4 l3">
-                            <div class="col s12 m4 l3">
+                            <!-- <div class="col s12 m4 l3">
                               <h3>Genre Info: </h3>
                               <h4>Genre: {{bc.currentGenre.genre}}</h4>
                               <h4>Genre: {{pc.currentGenre._id}}</h4>
-                            </div>
+                            </div> -->
 
                         </div>
 
